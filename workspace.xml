@@ -3147,60 +3147,22 @@
                       </block>
                     </value>
                     <next>
-                      <block type="ShowNotificationMessage">
-                        <value name="VALUE-0">
-                          <block type="Message">
-                            <value name="VALUE-0">
-                              <block type="Text">
-                                <field name="TEXT">Prone + Zoom + Interact = Mod Menu</field>
-                              </block>
-                            </value>
+                      <block type="subroutineInstanceBlock">
+                        <mutation>
+                          <parameter types="String">Message to myself</parameter>
+                          <parameter types="String">Message to Player</parameter>
+                        </mutation>
+                        <field name="SUBROUTINE_NAME">Messages</field>
+                        <value name="PARAM-0">
+                          <block type="Text">
+                            <field name="TEXT">Prone + Zoom + Interact = Mod Menu</field>
                           </block>
                         </value>
-                        <value name="VALUE-1">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="true"></mutation>
-                                <field name="OBJECTTYPE">Player</field>
-                                <field name="VAR" id="wOT4xtF2nvHs.B`d|}0$" variabletype="Player">MenuPlayerSelected</field>
-                                <value name="OBJECT">
-                                  <block type="EventPlayer"></block>
-                                </value>
-                              </block>
-                            </value>
+                        <value name="PARAM-1">
+                          <block type="Text">
+                            <field name="TEXT">You have set {} as a Moderator</field>
                           </block>
                         </value>
-                        <next>
-                          <block type="ShowNotificationMessage">
-                            <value name="VALUE-0">
-                              <block type="Message">
-                                <value name="VALUE-0">
-                                  <block type="Text">
-                                    <field name="TEXT">You have set {} as a Moderator</field>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="true"></mutation>
-                                        <field name="OBJECTTYPE">Player</field>
-                                        <field name="VAR" id="wOT4xtF2nvHs.B`d|}0$" variabletype="Player">MenuPlayerSelected</field>
-                                        <value name="OBJECT">
-                                          <block type="EventPlayer"></block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="EventPlayer"></block>
-                            </value>
-                          </block>
-                        </next>
                       </block>
                     </next>
                   </block>
@@ -3319,60 +3281,22 @@
                   </block>
                 </statement>
                 <next>
-                  <block type="ShowNotificationMessage">
-                    <value name="VALUE-0">
-                      <block type="Message">
-                        <value name="VALUE-0">
-                          <block type="Text">
-                            <field name="TEXT">You have been switched to the other Team a Moderator</field>
-                          </block>
-                        </value>
+                  <block type="subroutineInstanceBlock">
+                    <mutation>
+                      <parameter types="String">Message to myself</parameter>
+                      <parameter types="String">Message to Player</parameter>
+                    </mutation>
+                    <field name="SUBROUTINE_NAME">Messages</field>
+                    <value name="PARAM-0">
+                      <block type="Text">
+                        <field name="TEXT">You have moved {} to the other team</field>
                       </block>
                     </value>
-                    <value name="VALUE-1">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="true"></mutation>
-                            <field name="OBJECTTYPE">Player</field>
-                            <field name="VAR" id="wOT4xtF2nvHs.B`d|}0$" variabletype="Player">MenuPlayerSelected</field>
-                            <value name="OBJECT">
-                              <block type="EventPlayer"></block>
-                            </value>
-                          </block>
-                        </value>
+                    <value name="PARAM-1">
+                      <block type="Text">
+                        <field name="TEXT">You have been switched to the other Team a Moderator</field>
                       </block>
                     </value>
-                    <next>
-                      <block type="ShowNotificationMessage">
-                        <value name="VALUE-0">
-                          <block type="Message">
-                            <value name="VALUE-0">
-                              <block type="Text">
-                                <field name="TEXT">You have moved {} to the other team</field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="true"></mutation>
-                                    <field name="OBJECTTYPE">Player</field>
-                                    <field name="VAR" id="wOT4xtF2nvHs.B`d|}0$" variabletype="Player">MenuPlayerSelected</field>
-                                    <value name="OBJECT">
-                                      <block type="EventPlayer"></block>
-                                    </value>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="EventPlayer"></block>
-                        </value>
-                      </block>
-                    </next>
                   </block>
                 </next>
               </block>
@@ -3417,60 +3341,22 @@
                   </block>
                 </value>
                 <next>
-                  <block type="ShowNotificationMessage">
-                    <value name="VALUE-0">
-                      <block type="Message">
-                        <value name="VALUE-0">
-                          <block type="Text">
-                            <field name="TEXT">You was Killed by a Moderator</field>
-                          </block>
-                        </value>
+                  <block type="subroutineInstanceBlock">
+                    <mutation>
+                      <parameter types="String">Message to myself</parameter>
+                      <parameter types="String">Message to Player</parameter>
+                    </mutation>
+                    <field name="SUBROUTINE_NAME">Messages</field>
+                    <value name="PARAM-0">
+                      <block type="Text">
+                        <field name="TEXT">You Killed {} </field>
                       </block>
                     </value>
-                    <value name="VALUE-1">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="true"></mutation>
-                            <field name="OBJECTTYPE">Player</field>
-                            <field name="VAR" id="wOT4xtF2nvHs.B`d|}0$" variabletype="Player">MenuPlayerSelected</field>
-                            <value name="OBJECT">
-                              <block type="EventPlayer"></block>
-                            </value>
-                          </block>
-                        </value>
+                    <value name="PARAM-1">
+                      <block type="Text">
+                        <field name="TEXT">You was Killed by a Moderator</field>
                       </block>
                     </value>
-                    <next>
-                      <block type="ShowNotificationMessage">
-                        <value name="VALUE-0">
-                          <block type="Message">
-                            <value name="VALUE-0">
-                              <block type="Text">
-                                <field name="TEXT">You Killed {} </field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="true"></mutation>
-                                    <field name="OBJECTTYPE">Player</field>
-                                    <field name="VAR" id="wOT4xtF2nvHs.B`d|}0$" variabletype="Player">MenuPlayerSelected</field>
-                                    <value name="OBJECT">
-                                      <block type="EventPlayer"></block>
-                                    </value>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="EventPlayer"></block>
-                        </value>
-                      </block>
-                    </next>
                   </block>
                 </next>
               </block>
@@ -3515,60 +3401,22 @@
                   </block>
                 </value>
                 <next>
-                  <block type="ShowNotificationMessage">
-                    <value name="VALUE-0">
-                      <block type="Message">
-                        <value name="VALUE-0">
-                          <block type="Text">
-                            <field name="TEXT">You was undeployed by a Moderator</field>
-                          </block>
-                        </value>
+                  <block type="subroutineInstanceBlock">
+                    <mutation>
+                      <parameter types="String">Message to myself</parameter>
+                      <parameter types="String">Message to Player</parameter>
+                    </mutation>
+                    <field name="SUBROUTINE_NAME">Messages</field>
+                    <value name="PARAM-0">
+                      <block type="Text">
+                        <field name="TEXT">You undeployed  {} </field>
                       </block>
                     </value>
-                    <value name="VALUE-1">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="true"></mutation>
-                            <field name="OBJECTTYPE">Player</field>
-                            <field name="VAR" id="wOT4xtF2nvHs.B`d|}0$" variabletype="Player">MenuPlayerSelected</field>
-                            <value name="OBJECT">
-                              <block type="EventPlayer"></block>
-                            </value>
-                          </block>
-                        </value>
+                    <value name="PARAM-1">
+                      <block type="Text">
+                        <field name="TEXT">You was undeployed by a Moderator</field>
                       </block>
                     </value>
-                    <next>
-                      <block type="ShowNotificationMessage">
-                        <value name="VALUE-0">
-                          <block type="Message">
-                            <value name="VALUE-0">
-                              <block type="Text">
-                                <field name="TEXT">You undeployed  {} </field>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="true"></mutation>
-                                    <field name="OBJECTTYPE">Player</field>
-                                    <field name="VAR" id="wOT4xtF2nvHs.B`d|}0$" variabletype="Player">MenuPlayerSelected</field>
-                                    <value name="OBJECT">
-                                      <block type="EventPlayer"></block>
-                                    </value>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="EventPlayer"></block>
-                        </value>
-                      </block>
-                    </next>
                   </block>
                 </next>
               </block>
@@ -3687,60 +3535,22 @@
                               </block>
                             </value>
                             <next>
-                              <block type="ShowNotificationMessage">
-                                <value name="VALUE-0">
-                                  <block type="Message">
-                                    <value name="VALUE-0">
-                                      <block type="Text">
-                                        <field name="TEXT">Wait 1 minute until you can Deploy</field>
-                                      </block>
-                                    </value>
+                              <block type="subroutineInstanceBlock">
+                                <mutation>
+                                  <parameter types="String">Message to myself</parameter>
+                                  <parameter types="String">Message to Player</parameter>
+                                </mutation>
+                                <field name="SUBROUTINE_NAME">Messages</field>
+                                <value name="PARAM-0">
+                                  <block type="Text">
+                                    <field name="TEXT">You timeouted out   {} </field>
                                   </block>
                                 </value>
-                                <value name="VALUE-1">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="true"></mutation>
-                                        <field name="OBJECTTYPE">Player</field>
-                                        <field name="VAR" id="wOT4xtF2nvHs.B`d|}0$" variabletype="Player">MenuPlayerSelected</field>
-                                        <value name="OBJECT">
-                                          <block type="EventPlayer"></block>
-                                        </value>
-                                      </block>
-                                    </value>
+                                <value name="PARAM-1">
+                                  <block type="Text">
+                                    <field name="TEXT">Wait 1 minute until you can Deploy</field>
                                   </block>
                                 </value>
-                                <next>
-                                  <block type="ShowNotificationMessage">
-                                    <value name="VALUE-0">
-                                      <block type="Message">
-                                        <value name="VALUE-0">
-                                          <block type="Text">
-                                            <field name="TEXT">You timeouted out   {} </field>
-                                          </block>
-                                        </value>
-                                        <value name="VALUE-1">
-                                          <block type="GetVariable">
-                                            <value name="VALUE-0">
-                                              <block type="variableReferenceBlock">
-                                                <mutation isObjectVar="true"></mutation>
-                                                <field name="OBJECTTYPE">Player</field>
-                                                <field name="VAR" id="wOT4xtF2nvHs.B`d|}0$" variabletype="Player">MenuPlayerSelected</field>
-                                                <value name="OBJECT">
-                                                  <block type="EventPlayer"></block>
-                                                </value>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </value>
-                                      </block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="EventPlayer"></block>
-                                    </value>
-                                  </block>
-                                </next>
                               </block>
                             </next>
                           </block>
@@ -5225,42 +5035,6 @@
       </block>
     </value>
   </block>
-  <block type="SetVariable" x="-2891" y="6296">
-    <value name="VALUE-0">
-      <block type="variableReferenceBlock">
-        <mutation isObjectVar="true"></mutation>
-        <field name="OBJECTTYPE">Player</field>
-        <field name="VAR" id="wOT4xtF2nvHs.B`d|}0$" variabletype="Player">MenuPlayerSelected</field>
-        <value name="OBJECT">
-          <block type="EventPlayer"></block>
-        </value>
-      </block>
-    </value>
-    <value name="VALUE-1">
-      <block type="Text">
-        <field name="TEXT">None</field>
-      </block>
-    </value>
-    <next>
-      <block type="SetVariable">
-        <value name="VALUE-0">
-          <block type="variableReferenceBlock">
-            <mutation isObjectVar="true"></mutation>
-            <field name="OBJECTTYPE">Player</field>
-            <field name="VAR" id="(o=c.RU4w-CB`~4PL]35" variabletype="Player">MenuTeamSelected</field>
-            <value name="OBJECT">
-              <block type="EventPlayer"></block>
-            </value>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="Text">
-            <field name="TEXT">None</field>
-          </block>
-        </value>
-      </block>
-    </next>
-  </block>
   <block type="subroutineBlock" deletable="false" x="-6047" y="6735">
     <field name="SUBROUTINE_NAME">CreateMenus</field>
     <statement name="ACTIONS">
@@ -6207,7 +5981,7 @@
   </block>
   <block type="subroutineBlock" deletable="false" x="-6716" y="9476">
     <mutation>
-      <parameter types="String">Message to mod</parameter>
+      <parameter types="String">Message to myself</parameter>
       <parameter types="String">Message to Player</parameter>
     </mutation>
     <field name="SUBROUTINE_NAME">Messages</field>
@@ -6217,7 +5991,7 @@
           <block type="Message">
             <value name="VALUE-0">
               <block type="subroutineArgumentBlock">
-                <field name="ARGUMENT_INDEX">0</field>
+                <field name="ARGUMENT_INDEX">1</field>
               </block>
             </value>
           </block>
@@ -6242,7 +6016,7 @@
               <block type="Message">
                 <value name="VALUE-0">
                   <block type="subroutineArgumentBlock">
-                    <field name="ARGUMENT_INDEX">1</field>
+                    <field name="ARGUMENT_INDEX">0</field>
                   </block>
                 </value>
                 <value name="VALUE-1">
