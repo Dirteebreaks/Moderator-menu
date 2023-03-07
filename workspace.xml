@@ -13,6 +13,7 @@
     <variable type="Player" id="(o=c.RU4w-CB`~4PL]35">MenuTeamSelected</variable>
     <variable type="Player" id="N|^,q{:/snuJP5Fb!U!q">TimeOut</variable>
     <variable type="Player" id="-ht$5]:|vi;%v!6zD6Vb">loadout</variable>
+    <variable type="Player" id="e;QL(I,@.FMetxgjspQM">AmmoLeftInMag</variable>
   </variables>
   <block type="modBlock" deletable="false" x="524" y="311">
     <statement name="RULES">
